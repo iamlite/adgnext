@@ -1,0 +1,22 @@
+{
+  "MD013": {
+    "line_length": 999
+  },
+  "MD033": {
+    "allowed_elements": [
+      "a",
+      "div",
+      "h1",
+      "h2",
+      "h3",
+      "h4",
+      "h5",
+      "h6",
+      "p",
+      "span",
+      "ul",
+      "img",
+      "code"
+    ]
+  }
+}
