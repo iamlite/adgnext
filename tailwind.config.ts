@@ -4,7 +4,7 @@ import type { Config } from 'tailwindcss';
 
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: ['class', '[data-theme="dim"]'],
+  darkMode: ['class', '[data-theme="adgdark"]'],
   theme: {},
   variants: {
     extend: {},
@@ -55,6 +55,6 @@ export default {
         },
       },
     ],
-    darkTheme: 'dim',
+    darkTheme: 'adgdark',
   },
 } satisfies Config;

@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
+import { ThemeProvider } from 'next-themes';
 import * as React from 'react';
 
 import '@/styles/globals.css';
 
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
-import { ThemeProvider } from '@/components/ThemeContext';
 
 import { siteConfig } from '@/constant/config';
 
@@ -46,15 +46,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ThemeProvider>
-      <html lang='en'>
-        <head />
-        <body className='flex flex-col min-h-screen'>
+    <html lang='en'>
+      <head />
+      <body className='flex flex-col min-h-screen'>
+        <ThemeProvider attribute='data-theme' themes={['adgdark', 'adglight']}>
           <Header />
           <div className='flex-grow p-10'>{children}</div>
           <Footer />
-        </body>
-      </html>
-    </ThemeProvider>
+        </ThemeProvider>
+      </body>
+    </html>
   );
 }

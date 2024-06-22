@@ -1,13 +1,10 @@
 'use client';
 
-import Image from 'next/image';
 import React from 'react';
 
-import { useTheme } from '../components/ThemeContext';
+import Logo from '@/components/Logo';
 
 const Footer: React.FC = () => {
-  const { logo } = useTheme();
-
   return (
     <footer className='text-base-content'>
       <div className='footer footer-center p-10 bg-base-300'>
@@ -36,13 +33,7 @@ const Footer: React.FC = () => {
       {/* Brand */}
       <aside className='bg-base-100 py-4 px-8 w-full flex gap-2 flex-wrap justify-between items-center text-sm'>
         <p className='text-xl flex items-center gap-2'>
-          <Image
-            alt='Logo'
-            src={logo}
-            width={200}
-            height={50}
-            className='object-contain'
-          />
+          <Logo />
         </p>
         <p>Copyright © 2024 - All rights reserved</p>
       </aside>
